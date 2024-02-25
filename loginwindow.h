@@ -16,7 +16,7 @@ public:
     ~LoginWindow();
 
 private slots:
-    void on_pushButton_OK_clicked();
+    void on_pushButton_login_clicked();
 
 private:
     Ui::LoginWindow *ui;
