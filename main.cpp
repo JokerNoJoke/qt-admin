@@ -9,7 +9,7 @@ int main(int argc, char *argv[])
     LoginWindow lw;
     lw.show();
     MainWindow mw;
-    // w.show();
+    mw.setWindowFlags(Qt::FramelessWindowHint);
     QObject::connect(&lw, SIGNAL(showMainWindow()), &mw, SLOT(show()));
     return a.exec();
 }

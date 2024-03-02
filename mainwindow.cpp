@@ -4,11 +4,9 @@
 #include "tab/tabone.h"
 #include "tab/tabtwo.h"
 
-#include "QListWidgetItem"
-
-MainWindow::MainWindow(QWidget *parent) :
-    QMainWindow(parent),
-    ui(new Ui::MainWindow)
+MainWindow::MainWindow(QWidget *parent)
+    : QWidget(parent)
+    , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
 

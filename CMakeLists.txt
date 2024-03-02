@@ -14,14 +14,15 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 
 set(PROJECT_SOURCES
         main.cpp
+        resource/resource.qrc
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(qt-admin
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
-        mainwindow.h mainwindow.cpp mainwindow.ui
         loginwindow.h loginwindow.cpp loginwindow.ui
+        mainwindow.h mainwindow.cpp mainwindow.ui
         tab/tabone.h tab/tabone.cpp tab/tabone.ui
         tab/tabtwo.h tab/tabtwo.cpp tab/tabtwo.ui
     )
